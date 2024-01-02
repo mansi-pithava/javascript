@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>using this keyword</title>
+    <script type="text/javascript">
+        function data(username, email)
+        {
+            this.username=username;
+            this.email=email;
+        }
+    </script>
+</head>
+<body>
+    <h4><u>"      info   "</u></h4>
+    <script type="text/javascript">
+        let detail= new data("allen","allen123@gmail.com");
+        document.write("<b>username: </b>"+detail.username+"<br/>");
+        document.write("<b>   Email: </b>"+detail.email+"<br/>");
+    </script>
+    
+</body>
+</html>
