@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
-<body>
-    <input type="text" id="Num1" value="1" onblur="reSum();"/>
 
-    <input type="text" id="Num2" value="1" onblur="reSum();"/> <br>
+<body>
+    <input type="text" id="Num1" value="1" onblur="reSum();" />
+
+    <input type="text" id="Num2" value="1" onblur="reSum();" />
     <p>Auto Sum</p>
 
-    <input type="text" id="Sum" value=""/>
+    <input type="text" id="Sum" value="" />
+    <br>
     <script>
 
-        function reSum()
+        function reSum() 
         {
             var num1 = parseInt(document.getElementById("Num1").value);
             var num2 = parseInt(document.getElementById("Num2").value);
             document.getElementById("Sum").value = num1 + num2;
 
-        }
 
+        }
     </script>
 </body>
+
 </html>
