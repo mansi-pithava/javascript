@@ -12,6 +12,17 @@
   </style>
 </head>
 <body>
+  <div class="container card body m-3  border border-dark"hidden>
+    <h4 class="text text-dark">intro</h4>
+    <ul>
+      <li>addition</li>
+      <li>substraction</li>
+      <li>multiplication</li>
+      <li>division</li>
+      <li>and you can find a <b>percentage</b> select <b><u>%(modulo)</u></b></li>
+    </ul>
+  </div>
+  
   <div class="container calculator card body bg bg-dark text text-light">
     <h2>Calculator</h2>
     <div class="input-group mb-3">
@@ -59,7 +70,8 @@
           }
           break;
           case '%':
-          result = num1 % num2;
+            result=(num1 *100)/num2;
+         // result = num1 % num2;
           break;
           
         default:
@@ -69,5 +81,6 @@
       document.getElementById('result').innerHTML = 'Result: ' + result;
     }
   </script>
+  
 </body>
 </html>
